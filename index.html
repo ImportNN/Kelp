@@ -9,13 +9,13 @@
 <!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
 <!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 <!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="fonts/iconic/css/material-design-iconic-font.min.css">
 <!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
 <!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.css">
 <!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="css/util.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
@@ -33,7 +33,7 @@
 			</h3>
 
 			<p class="txt-center l1-txt2 p-b-60">
-				Our ecosystem is under construction
+				Our Ecosystem is under construction
 			</p>
 
 			<div class="flex-w flex-c cd100 p-b-82">
@@ -42,20 +42,29 @@
 				</div>
 
 				<div class="flex-col-c-m size2 how-countdown">
+					<span><img src = './images/staking.jpeg' height="80"></span>
+				</div>
+
+				<div class="flex-col-c-m size2 how-countdown">
+					<span><img src = './images/decentralized.png' height="80"></span>
+				</div>
+
+				<div class="flex-col-c-m size2 how-countdown">
 					<span><img src = './images/9285.png' height="80"></span>
 				</div>
-
-				<div class="flex-col-c-m size2 how-countdown">
-					<span><img src = './images/Binance-coin-bnb-logo.png' height="80"></span>
-				</div>
-
-				<div class="flex-col-c-m size2 how-countdown">
-					<span><img src = './images/poly.png' height="80"></span>
-				</div>
 			</div>
+
+			<button class="flex-c-m s1-txt2 size3 how-btn"  data-toggle="modal" data-target="#subscribe">
+				Follow us for updates! 
+			</button>
+		</div>
+
+		<span class="s1-txt3 txt-center">
+		</span>
+		
 	</div>
 
-	<!-- Modal Login -->
+	<!-- Modal Notify -->
 	<div class="modal fade" id="subscribe" tabindex="-1" role="dialog" aria-hidden="true">
 		<div class="modal-dialog" role="document" data-dismiss="modal">
 			<div class="modal-subscribe where1-parent bg0 bor2 size4 p-t-54 p-b-100 p-l-15 p-r-15">
@@ -65,19 +74,16 @@
 
 				<div class="wsize1 m-lr-auto">
 					<h3 class="m1-txt1 txt-center p-b-36">
-						<span class="bor1 p-b-6">Subscribe</span>
+						<span class="bor1 p-b-6">Notify Me</span>
 					</h3>
 
 					<p class="m1-txt2 txt-center p-b-40">
-						Follow us for update now!
+						We will let you know when we launch our plataform and socials<br>
+						<i class="fa-brands fa-twitter" style="font-size:25px"></i>
+						<i class="fab" style="font-size:25px"> &#xf392; </i>
 					</p>
 
 					<form class="contact100-form validate-form">
-						<div class="wrap-input100 m-b-10 validate-input" data-validate = "Name is required">
-							<input class="s1-txt4 placeholder0 input100" type="text" name="name" placeholder="Name">
-							<span class="focus-input100"></span>
-						</div>
-
 						<div class="wrap-input100 m-b-20 validate-input" data-validate = "Email is required: ex@abc.xyz">
 							<input class="s1-txt4 placeholder0 input100" type="text" name="email" placeholder="Email">
 							<span class="focus-input100"></span>
@@ -91,12 +97,33 @@
 					</form>
 
 					<p class="s1-txt5 txt-center wsize2 m-lr-auto p-t-20">
-						And don’t worry, we hate spam too! You can unsubcribe at anytime.
+						And don’t worry, we hate spam.
 					</p>
 				</div>
 			</div>
 
 		</div>
 	</div>
+<!--===============================================================================================-->	
+	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/bootstrap/js/popper.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/select2/select2.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/tilt/tilt.jquery.min.js"></script>
+	<script >
+		$('.js-tilt').tilt({
+			scale: 1.1
+		})
+	</script>
+<!--===============================================================================================-->
+
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="js/main.js" type ="module"></script>
+
+<!--===============================================================================================-->
+
 </body>
 </html>
